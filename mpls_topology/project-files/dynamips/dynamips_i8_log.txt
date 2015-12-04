@@ -1,0 +1,55 @@
+Dec 04 10:14:57.847 HYPERVISOR: Release 0.2.14-x86/Linux (tag 2014092320)
+Dec 04 10:14:57.847 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 44936.
+Dec 04 10:14:57.897 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 04 10:14:57.898 HYPERVISOR: exec_cmd: hypervisor uuid 
+Dec 04 10:14:57.898 HYPERVISOR: exec_cmd: hypervisor working_dir /home/user/GNS3/projects/mpls_topology/project-files/dynamips 
+Dec 04 10:14:57.898 GENERAL: working_dir=/home/user/GNS3/projects/mpls_topology/project-files/dynamips
+Dec 04 10:14:57.899 HYPERVISOR: exec_cmd: vm create R5 5 c3600 
+Dec 04 10:14:57.900 VM: VM R5 created.
+Dec 04 10:14:57.904 HYPERVISOR: exec_cmd: vm set_con_tcp_port R5 2005 
+Dec 04 10:14:57.905 HYPERVISOR: exec_cmd: c3600 get_mac_addr R5 
+Dec 04 10:14:57.906 HYPERVISOR: exec_cmd: vm set_ios R5 /home/user/GNS3/images/IOS/c3640-a3js-mz.124-23.image 
+Dec 04 10:14:57.907 HYPERVISOR: exec_cmd: c3600 set_mac_addr R5 cc05.0ba2.0000 
+Dec 04 10:14:57.908 HYPERVISOR: exec_cmd: vm set_nvram R5 256 
+Dec 04 10:14:57.909 HYPERVISOR: exec_cmd: vm set_ram R5 192 
+Dec 04 10:14:57.910 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:14:57.911 HYPERVISOR: exec_cmd: vm slot_add_binding R5 0 0 NM-1FE-TX 
+Dec 04 10:14:57.912 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:14:57.914 HYPERVISOR: exec_cmd: vm slot_add_binding R5 1 0 NM-1FE-TX 
+Dec 04 10:14:57.915 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:14:57.915 HYPERVISOR: exec_cmd: vm set_idle_pc R5 0x605b90e0 
+Dec 04 10:14:57.918 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:14:57.919 HYPERVISOR: exec_cmd: vm slot_add_binding R5 2 0 NM-4E 
+Dec 04 10:14:57.920 HYPERVISOR: exec_cmd: vm set_config R5 configs/i5_startup-config.cfg 
+Dec 04 10:14:58.194 HYPERVISOR: exec_cmd: vm set_ghost_status R5 2 
+Dec 04 10:14:58.195 HYPERVISOR: exec_cmd: vm set_ghost_file R5 c3640-a3js-mz.124-23.image-192.ghost 
+Dec 04 10:14:58.320 HYPERVISOR: exec_cmd: nio create_tap tap-c94fe5f6-d704-47ef-a4bf-b49e7078c4ee tap1 
+Dec 04 10:14:58.323 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 2 2 tap-c94fe5f6-d704-47ef-a4bf-b49e7078c4ee 
+Dec 04 10:14:58.324 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:14:58.488 HYPERVISOR: exec_cmd: nio create_udp udp-53280475-cb41-4c82-b9d3-d9fb6e152e31 10002 127.0.0.1 10005 
+Dec 04 10:14:58.488 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 1 0 udp-53280475-cb41-4c82-b9d3-d9fb6e152e31 
+Dec 04 10:14:58.489 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:14:58.567 HYPERVISOR: exec_cmd: nio create_udp udp-78905036-415c-459a-abe6-2debc378f128 10003 127.0.0.1 10004 
+Dec 04 10:14:58.578 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 2 0 udp-78905036-415c-459a-abe6-2debc378f128 
+Dec 04 10:14:58.584 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:14:58.604 HYPERVISOR: exec_cmd: nio create_udp udp-6a536e0e-a927-4f3a-87bf-2d761f39fb3a 10006 127.0.0.1 10007 
+Dec 04 10:14:58.609 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 2 1 udp-6a536e0e-a927-4f3a-87bf-2d761f39fb3a 
+Dec 04 10:14:58.610 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:14:58.661 HYPERVISOR: exec_cmd: nio create_udp udp-9996143e-3d20-4863-8745-2d79cbc2170a 10009 127.0.0.1 10008 
+Dec 04 10:14:58.664 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R5 0 0 udp-9996143e-3d20-4863-8745-2d79cbc2170a 
+Dec 04 10:14:58.670 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:15:01.547 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:15:01.547 HYPERVISOR: exec_cmd: vm start R5 
+Dec 04 10:31:40.620 HYPERVISOR: exec_cmd: nio bind_filter udp-9996143e-3d20-4863-8745-2d79cbc2170a 2 capture 
+Dec 04 10:31:40.620 HYPERVISOR: exec_cmd: nio setup_filter udp-9996143e-3d20-4863-8745-2d79cbc2170a 2 en10mb /home/user/GNS3/projects/mpls_topology/project-files/captures/R5_FastEthernet0-0_to_R2_FastEthernet1-0.pcap 
+Dec 04 10:53:08.838 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:53:08.869 HYPERVISOR: exec_cmd: vm stop R5 
+Dec 04 10:53:09.043 VM: VM R5 shutdown.
+Dec 04 10:53:14.285 HYPERVISOR: exec_cmd: vm extract_config R5 
+Dec 04 10:53:15.459 HYPERVISOR: exec_cmd: vm get_status R5 
+Dec 04 10:53:15.460 HYPERVISOR: exec_cmd: vm extract_config R5 
+Dec 04 10:53:15.465 HYPERVISOR: exec_cmd: vm delete R5 
+Dec 04 10:53:15.465 VM: VM R5 destroyed.
+Dec 04 10:53:15.467 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 04 10:53:15.881 HYPERVISOR: Stopped.
+Dec 04 10:53:15.899 GENERAL: reset done.

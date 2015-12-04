@@ -1,0 +1,56 @@
+Dec 04 11:28:09.764 HYPERVISOR: Release 0.2.14-x86/Linux (tag 2014092320)
+Dec 04 11:28:09.765 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 35159.
+Dec 04 11:28:09.891 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 04 11:28:09.892 HYPERVISOR: exec_cmd: hypervisor uuid 
+Dec 04 11:28:09.892 HYPERVISOR: exec_cmd: hypervisor working_dir /home/user/GNS3/projects/mpls_tunnel_topology/project-files/dynamips 
+Dec 04 11:28:09.892 GENERAL: working_dir=/home/user/GNS3/projects/mpls_tunnel_topology/project-files/dynamips
+Dec 04 11:28:09.893 HYPERVISOR: exec_cmd: vm create R3 3 c3600 
+Dec 04 11:28:09.894 VM: VM R3 created.
+Dec 04 11:28:09.895 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 2003 
+Dec 04 11:28:09.896 HYPERVISOR: exec_cmd: c3600 get_mac_addr R3 
+Dec 04 11:28:09.896 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 11:28:09.897 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 NM-1FE-TX 
+Dec 04 11:28:09.897 HYPERVISOR: exec_cmd: vm set_nvram R3 256 
+Dec 04 11:28:09.898 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 11:28:09.898 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 NM-1FE-TX 
+Dec 04 11:28:09.899 HYPERVISOR: exec_cmd: vm set_ios R3 /home/user/GNS3/images/IOS/c3640-a3js-mz.124-23.image 
+Dec 04 11:28:09.899 HYPERVISOR: exec_cmd: vm set_ram R3 192 
+Dec 04 11:28:09.902 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 11:28:09.903 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x605b90e0 
+Dec 04 11:28:09.904 HYPERVISOR: exec_cmd: c3600 set_mac_addr R3 cc03.0b5b.0000 
+Dec 04 11:28:09.906 HYPERVISOR: exec_cmd: vm set_config R3 configs/i3_startup-config.cfg 
+Dec 04 11:28:09.908 HYPERVISOR: exec_cmd: vm create Ghost 0 c3600 
+Dec 04 11:28:09.908 VM: VM Ghost created.
+Dec 04 11:28:09.909 HYPERVISOR: exec_cmd: vm set_ios Ghost /home/user/GNS3/images/IOS/c3640-a3js-mz.124-23.image 
+Dec 04 11:28:09.911 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Dec 04 11:28:09.913 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3640-a3js-mz.124-23.image-192.ghost 
+Dec 04 11:28:09.915 HYPERVISOR: exec_cmd: vm set_ram Ghost 192 
+Dec 04 11:28:09.916 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 04 11:28:09.917 HYPERVISOR: exec_cmd: vm start Ghost 
+Dec 04 11:28:10.270 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Dec 04 11:28:10.270 HYPERVISOR: exec_cmd: vm stop Ghost 
+Dec 04 11:28:10.327 VM: VM Ghost shutdown.
+Dec 04 11:28:10.328 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Dec 04 11:28:10.328 VM: VM Ghost destroyed.
+Dec 04 11:28:10.328 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Dec 04 11:28:10.329 HYPERVISOR: exec_cmd: vm set_ghost_file R3 c3640-a3js-mz.124-23.image-192.ghost 
+Dec 04 11:28:10.749 HYPERVISOR: exec_cmd: nio create_udp udp-6e6dcf22-35ae-465f-8272-e24dc850f0b5 10005 127.0.0.1 10004 
+Dec 04 11:28:10.757 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 1 0 udp-6e6dcf22-35ae-465f-8272-e24dc850f0b5 
+Dec 04 11:28:10.764 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 11:28:10.934 HYPERVISOR: exec_cmd: nio create_udp udp-e3d0e0ed-8cef-4cac-8ae2-fe789457aa98 10016 127.0.0.1 10017 
+Dec 04 11:28:10.935 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-e3d0e0ed-8cef-4cac-8ae2-fe789457aa98 
+Dec 04 11:28:10.936 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 11:28:12.424 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 11:28:12.428 HYPERVISOR: exec_cmd: vm start R3 
+Dec 04 12:07:30.765 HYPERVISOR: exec_cmd: vm extract_config R3 
+Dec 04 12:07:36.100 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 12:07:36.101 HYPERVISOR: exec_cmd: vm stop R3 
+Dec 04 12:07:36.199 VM: VM R3 shutdown.
+Dec 04 12:07:45.112 HYPERVISOR: exec_cmd: vm extract_config R3 
+Dec 04 12:07:46.070 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 04 12:07:46.071 HYPERVISOR: exec_cmd: vm extract_config R3 
+Dec 04 12:07:46.090 HYPERVISOR: exec_cmd: vm delete R3 
+Dec 04 12:07:46.090 VM: VM R3 destroyed.
+Dec 04 12:07:46.092 HYPERVISOR: exec_cmd: hypervisor stop 
+Dec 04 12:07:46.471 HYPERVISOR: Stopped.
+Dec 04 12:07:46.471 GENERAL: reset done.
